@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 
 st.markdown('# Medical Cost Personal Dataset')
-df = pd.read_csv('/Users/vladislavazhilenko/Desktop/insurance.csv')
+df = pd.read_csv('insurance.csv')
 app = st.sidebar.selectbox('Steps', ['Analyse', 'Statistics&Clean_Up', 'Links'])
 if app == 'Analyse':
     table1, table2, table3 = st.tabs(['Simple Charts', 'Analysis for an insurance company', 'Conclusion'])
